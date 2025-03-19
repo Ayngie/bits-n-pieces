@@ -8,7 +8,9 @@ const Counter: React.FC = () => {
     <div className="card">
       <h2>Counter:</h2>
 
-      <button onClick={() => setCount((count) => count + 1)}>
+      <button
+        className={count > 0 ? 'button-on' : ''}
+        onClick={() => setCount((count) => count + 1)}>
         Count is {count}
       </button>
 
