@@ -48,6 +48,14 @@ button {
   transition: border-color 0.25s;
 }
 
+.button-on {
+  background-color: hotpink;
+  color: 'white';
+}
+.button-off {
+  background-color: turquoise;
+}
+
 button:hover {
   border-color: #646cff;
 }
