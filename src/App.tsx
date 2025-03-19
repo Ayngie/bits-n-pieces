@@ -1,13 +1,13 @@
 import './App.css';
 import Counter from './components/Counter';
-import Toggle from './components/Toggle';
+import Toggles from './components/Toggles';
 
 function App() {
   return (
     <>
       <h1>Buttons:</h1>
       <Counter />
-      <Toggle />
+      <Toggles />
     </>
   );
 }
