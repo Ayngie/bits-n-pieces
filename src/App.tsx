@@ -6,12 +6,8 @@ function App() {
   return (
     <>
       <h1>Buttons:</h1>
-      <div className="card">
-        <Counter />
-      </div>
-      <div className="card">
-        <Toggle />
-      </div>
+      <Counter />
+      <Toggle />
     </>
   );
 }

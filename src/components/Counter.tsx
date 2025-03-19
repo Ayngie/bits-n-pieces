@@ -5,7 +5,7 @@ const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <>
+    <div className="card">
       <h2>Counter:</h2>
 
       <button onClick={() => setCount((count) => count + 1)}>
@@ -13,7 +13,7 @@ const Counter: React.FC = () => {
       </button>
 
       <button onClick={() => setCount(0)}>Reset count</button>
-    </>
+    </div>
   );
 };
 
