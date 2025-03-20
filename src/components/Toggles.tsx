@@ -1,5 +1,6 @@
 import Toggle from './Toggle';
 import ToggleColored from './ToggleColored';
+import ToggleTheme from './ToggleTheme';
 
 const Toggles: React.FC = () => {
   return (
@@ -7,6 +8,7 @@ const Toggles: React.FC = () => {
       <h2>Toggles:</h2>
       <Toggle />
       <ToggleColored />
+      <ToggleTheme />
     </div>
   );
 };
