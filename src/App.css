@@ -10,3 +10,29 @@
   flex-direction: column;
   padding: 2em;
 }
+
+.button-on {
+  background-color: hotpink;
+  color: rgba(255, 255, 255, 0.87);
+}
+.button-off {
+  background-color: turquoise;
+}
+
+#chosen-dark-theme {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;  
+  
+  button {
+    background-color: #646cff;
+    color: rgba(255, 255, 255, 0.87);
+    /* border: 1px solid white;  */
+  }
+  button:hover {
+    border-color: white;
+  }
+}
+#chosen-light-theme {
+  color: #213547;
+  background-color: #f9f6f6;
+}
