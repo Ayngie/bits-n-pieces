@@ -1,6 +1,6 @@
 import './App.css';
-import Counter from './components/Counter';
-import Toggles from './components/Toggles';
+import Counter from './components/Buttons/Counter';
+import Toggles from './components/Buttons/Toggles';
 
 function App() {
   return (
