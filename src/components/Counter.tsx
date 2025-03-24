@@ -7,11 +7,19 @@ const Counter: React.FC = () => {
   return (
     <div className="card">
       <h2>Counter:</h2>
+      <p>Count is: {count}</p>
 
+      {/* Increment count: */}
       <button
         className={count > 0 ? 'button-on' : ''}
         onClick={() => setCount((count) => count + 1)}>
-        Count is {count}
+        + Increment count: {count}
+      </button>
+
+      <button
+        className={count < 0 ? 'button-on' : ''}
+        onClick={() => setCount((count) => count - 1)}>
+        - Decrement count: {count}
       </button>
 
       <button onClick={() => setCount(0)}>Reset count</button>
