@@ -2,6 +2,7 @@ import './App.css';
 import Select from './components/Selects/Select';
 import Buttons from './components/Buttons/Buttons';
 import Forms from './components/Forms/Forms';
+import Selects from './components/Selects/Selects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Select />
       <Buttons />
       <Forms />
+      <Selects />
     </>
   );
 }
