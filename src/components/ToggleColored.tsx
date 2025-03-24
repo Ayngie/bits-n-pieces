@@ -4,7 +4,7 @@ const ToggleColored: React.FC = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
-    <>
+    <div>
       <h3>Toggle with interactive coloring:</h3>
 
       <button
@@ -12,7 +12,7 @@ const ToggleColored: React.FC = () => {
         onClick={() => setOn((prev) => !prev)}>
         {on ? 'ON' : 'OFF'}
       </button>
-    </>
+    </div>
   );
 };
 

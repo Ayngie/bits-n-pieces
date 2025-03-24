@@ -5,11 +5,11 @@ const Toggle: React.FC = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
-    <>
+    <div>
       <h3>Basic toggle</h3>
 
       <button onClick={() => setOn(!on)}>{on ? 'ON' : 'OFF'}</button>
-    </>
+    </div>
   );
 };
 
