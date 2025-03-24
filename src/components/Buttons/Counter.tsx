@@ -6,7 +6,7 @@ const Counter: React.FC = () => {
 
   return (
     <div className="card">
-      <h2>Counter:</h2>
+      <h3>Counter:</h3>
       <p>Count is: {count}</p>
 
       {/* Increment count: */}

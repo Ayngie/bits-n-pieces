@@ -5,7 +5,7 @@ import ToggleTheme from './ToggleTheme';
 const Toggles: React.FC = () => {
   return (
     <div className="card">
-      <h2>Toggles:</h2>
+      <h3>Toggles:</h3>
       <Toggle />
       <ToggleColored />
       <ToggleTheme />
