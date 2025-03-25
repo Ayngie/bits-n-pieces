@@ -1,11 +1,13 @@
+import ToggleTwoChoices from './components/Toggles/ToggleTwoChoices';
+import ToggleThreeChoices from './components/Toggles/ToggleThreeChoices';
 import './App.css';
-import ComponentMappingWithTypes from './components/DynamicComponentMapping/ComponentMappingWithTypes';
 
 function App() {
   return (
     <>
       <h1>Coding is fun!</h1>
-      <ComponentMappingWithTypes />
+      <ToggleTwoChoices />
+      <ToggleThreeChoices />
     </>
   );
 }
