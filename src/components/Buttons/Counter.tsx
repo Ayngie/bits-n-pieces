@@ -5,7 +5,7 @@ const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <div className="card">
+    <div className="card bordered-section">
       <h3>Counter:</h3>
       <p>Count is: {count}</p>
 
