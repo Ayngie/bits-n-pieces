@@ -22,6 +22,8 @@ const ComponentMappingWithTypes = () => {
 
   return (
     <>
+      <h2>Component Mapping with Types</h2>
+
       <label>
         Choose a subject:{' '}
         <select
