@@ -1,7 +1,7 @@
 const ComponentA = () => {
   return (
     <article className="bordered-section">
-      <h3>Component A</h3>
+      <h4>Component A</h4>
       <p>With content...</p>{' '}
     </article>
   );

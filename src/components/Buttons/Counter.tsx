@@ -5,7 +5,7 @@ const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <div className="bordered-section">
+    <article className="bordered-section">
       <h3>Counter:</h3>
       <p>Count is: {count}</p>
 
@@ -25,7 +25,7 @@ const Counter: React.FC = () => {
 
       {/* Reset count: */}
       <button onClick={() => setCount(0)}>Reset count</button>
-    </div>
+    </article>
   );
 };
 

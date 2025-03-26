@@ -4,14 +4,14 @@ const ToggleTheme: React.FC = () => {
   const [dark, setDark] = useState<boolean>(true);
 
   return (
-    <div
-      className="card"
+    <article
+      className="bordered-section"
       id={dark ? 'chosen-dark-theme' : 'chosen-light-theme'}>
-      <h3>Toggle theme between light/dark</h3>
+      <h3>Toggle theme between light/dark:</h3>
       <button onClick={() => setDark((prev) => !prev)}>
         {dark ? 'Dark theme' : 'Light theme'}
       </button>
-    </div>
+    </article>
   );
 };
 

@@ -3,12 +3,12 @@ const AddNumbers = () => {
   //TODO: import and use getSum funciton
 
   return (
-    <>
-      <h3>Add Numbers</h3>
+    <article className="bordered-section">
+      <h3>Add Numbers:</h3>
 
       {/* TODO: finish coding this */}
       <p>Coming soon...</p>
-    </>
+    </article>
   );
 };
 
