@@ -1,19 +1,20 @@
 import Select from './Selects/Select';
 import SelectsMultiple from './Selects/SelectsMultiple';
-import ComponentMappingWithTypes from './Selects/DynamicComponentMapping/ComponentMappingWithTypes';
-import ComponentMappingWithInterfaceAndArray from './Selects/DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
 
 const Selects = () => {
   return (
-    <section className="card bordered-section">
+    <section className="card ">
       <h2>Selects:</h2>
 
-      {/* TODO: Fix styling! */}
+      <article className="bordered-section">
+        <h3>Simple select:</h3>
+        <Select />
+      </article>
 
-      <Select />
-      <SelectsMultiple />
-      <ComponentMappingWithTypes />
-      <ComponentMappingWithInterfaceAndArray />
+      <article className="bordered-section">
+        <h3>Multiple selects:</h3>
+        <SelectsMultiple />
+      </article>
     </section>
   );
 };
