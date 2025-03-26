@@ -7,11 +7,7 @@ const ButtonWithProps: React.FC<ButtonWithPropsProps> = ({
   buttonText,
   toggleFunction,
 }) => {
-  return (
-    <div>
-      <button onClick={toggleFunction}>{buttonText}</button>
-    </div>
-  );
+  return <button onClick={toggleFunction}>{buttonText}</button>;
 };
 
 export default ButtonWithProps;
