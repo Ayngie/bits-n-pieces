@@ -8,7 +8,7 @@ const sanitizeInput = (input: string): string => {
     .trim(); // Remove leading/trailing spaces
 };
 
-const ChangeButtonText = () => {
+const ChangeButtonTextSanitized = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [buttonText, setButtonText] = useState<string>('Buttontext');
 
@@ -42,4 +42,4 @@ const ChangeButtonText = () => {
   );
 };
 
-export default ChangeButtonText;
+export default ChangeButtonTextSanitized;

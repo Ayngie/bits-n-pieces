@@ -1,6 +1,5 @@
 import ButtonWithProps from './Buttons/ButtonWithProps';
 import Counter from './Buttons/Counter';
-import ChangeButtonText from './Inputs/ChangeButtonText';
 
 const Buttons = () => {
   return (
@@ -14,8 +13,6 @@ const Buttons = () => {
         <h3>Button with props:</h3>
         <ButtonWithProps buttonText="Buttontext goes here" />
       </article>
-
-      <ChangeButtonText />
     </section>
   );
 };
