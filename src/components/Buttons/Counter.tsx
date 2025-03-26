@@ -5,7 +5,7 @@ const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <div className="card bordered-section">
+    <div className="bordered-section">
       <h3>Counter:</h3>
       <p>Count is: {count}</p>
 
@@ -16,12 +16,14 @@ const Counter: React.FC = () => {
         + Increment count: {count}
       </button>
 
+      {/* Decrement count: */}
       <button
         className={count < 0 ? 'button-on' : ''}
         onClick={() => setCount((count) => count - 1)}>
         - Decrement count: {count}
       </button>
 
+      {/* Reset count: */}
       <button onClick={() => setCount(0)}>Reset count</button>
     </div>
   );
