@@ -1,5 +1,5 @@
 interface ButtonWithPropsProps {
-  buttonText?: string;
+  buttonText: string;
   toggleFunction?: () => void; //Accept the function as a prop
 }
 
