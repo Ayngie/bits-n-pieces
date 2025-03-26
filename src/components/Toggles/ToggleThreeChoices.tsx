@@ -1,6 +1,6 @@
 import { JSX, useState } from 'react';
-import ComponentMappingWithTypes from '../Selects/DynamicComponentMapping/ComponentMappingWithTypes';
-import ComponentMappingWithInterfaceAndArray from '../Selects/DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
+import ComponentMappingWithTypes from '../DynamicComponentMapping/ComponentMappingWithTypes';
+import ComponentMappingWithInterfaceAndArray from '../DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
 
 const ToggleThreeChoices: React.FC = () => {
   const [mappingIndex, setMappingIndex] = useState<number>(0);
