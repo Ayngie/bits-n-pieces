@@ -1,5 +1,5 @@
 // import Select from './Select';
-import SelectsMultiple from './SelectsMultiple';
+import SelectsMultiple from './Selects/SelectsMultiple';
 
 const Selects = () => {
   return (

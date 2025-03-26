@@ -1,5 +1,5 @@
-import Counter from './Counter';
-import Toggles from '../Toggles/Toggles';
+import Counter from './Buttons/Counter';
+import Toggles from './Toggles';
 
 const Buttons = () => {
   return (

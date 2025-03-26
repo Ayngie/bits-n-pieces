@@ -1,6 +1,6 @@
-import Toggle from './Toggle';
-import ToggleColored from './ToggleColored';
-import ToggleTheme from './ToggleTheme';
+import Toggle from './Toggles/Toggle';
+import ToggleColored from './Toggles/ToggleColored';
+import ToggleTheme from './Toggles/ToggleTheme';
 
 const Toggles: React.FC = () => {
   return (
@@ -10,6 +10,8 @@ const Toggles: React.FC = () => {
       <ToggleColored />
       <ToggleTheme />
       {/* TODO: incorporate the rest? */}
+      {/* <ToggleTwoChoices />
+      <ToggleThreeChoices /> */}
     </div>
   );
 };

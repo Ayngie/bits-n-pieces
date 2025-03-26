@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ToggleWithProps from './ToggleWithProps';
-import ComponentMappingWithTypes from '../DynamicComponentMapping/ComponentMappingWithTypes';
-import ComponentMappingWithInterfaceAndArray from '../DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
+import ComponentMappingWithTypes from '../Selects/DynamicComponentMapping/ComponentMappingWithTypes';
+import ComponentMappingWithInterfaceAndArray from '../Selects/DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
 
 const ToggleTwoChoices = () => {
   const [basicChoiceOn, setBasicChoiceOn] = useState<boolean>(true);
