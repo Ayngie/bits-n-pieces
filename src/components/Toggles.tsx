@@ -15,7 +15,11 @@ const Toggles: React.FC = () => {
       <ToggleTheme />
       <ToggleTwoChoices />
       <ToggleThreeChoices />
-      <ToggleWithProps buttonText="Buttontext goes here" />
+      {/* Wrapping here for example component, to keep component file clean */}
+      <article className="bordered-section">
+        <h3>Toggle with props:</h3>
+        <ToggleWithProps buttonText="Buttontext goes here" />
+      </article>
     </section>
   );
 };

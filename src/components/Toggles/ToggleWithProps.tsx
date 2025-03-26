@@ -8,13 +8,9 @@ const ToggleWithProps: React.FC<ToggleWithPropsProps> = ({
   toggleFunction,
 }) => {
   return (
-    <>
-      {/* Header for when displayed as example component: */}
-      {!buttonText && <h2>Toggle with props!</h2>}
-
-      {/* Component: */}
+    <div>
       <button onClick={toggleFunction}>{buttonText}</button>
-    </>
+    </div>
   );
 };
 
