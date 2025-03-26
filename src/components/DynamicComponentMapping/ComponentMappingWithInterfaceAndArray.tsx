@@ -1,9 +1,11 @@
 const ComponentMappingWithInterfaceAndArray = () => {
   return (
-    <div>
+    <article className="bordered-section">
       <h2>Component Mapping with Interface and Array</h2>
+
       {/* TODO: finish coding this */}
-    </div>
+      <p>Coming soon...</p>
+    </article>
   );
 };
 export default ComponentMappingWithInterfaceAndArray;

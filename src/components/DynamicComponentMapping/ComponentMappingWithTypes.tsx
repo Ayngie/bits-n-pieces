@@ -1,27 +1,27 @@
 import { useState } from 'react';
-import Buttons from '../../Buttons';
-import Forms from '../../Forms';
-import Selects from '../../Selects';
+import ComponentA from './ComponentsToBeMapped/ComponentA';
+import ComponentB from './ComponentsToBeMapped/ComponentB';
+import ComponentC from './ComponentsToBeMapped/ComponentC';
 
 //Define the possible component options
-type ComponentKey = 'buttons' | 'forms' | 'selects';
+type ComponentKey = 'componentA' | 'componentB' | 'componentC';
 
 //Map components to their keys
 const componentMap: Record<ComponentKey, React.FC> = {
-  buttons: Buttons,
-  forms: Forms,
-  selects: Selects,
+  componentA: ComponentA,
+  componentB: ComponentB,
+  componentC: ComponentC,
 };
 
 const ComponentMappingWithTypes = () => {
   const [selectedComponent, setSelectedComponent] =
-    useState<ComponentKey>('buttons');
+    useState<ComponentKey>('componentA');
 
   //Dynamic component selection
   const SelectedComponent = componentMap[selectedComponent];
 
   return (
-    <div>
+    <article className="bordered-section">
       <h2>Component Mapping with Types</h2>
 
       <label>
@@ -31,18 +31,19 @@ const ComponentMappingWithTypes = () => {
           onChange={(e) =>
             setSelectedComponent(e.target.value as ComponentKey)
           }>
-          <option value="buttons">Buttons</option>
-          <option value="forms">Forms</option>
-          <option value="selects">Selects</option>
+          <option value="componentA">Component A</option>
+          <option value="componentB">Component B</option>
+          <option value="componentC">Component C</option>
         </select>
       </label>
+
       {/* Added error handling */}
       {SelectedComponent ? (
         <SelectedComponent />
       ) : (
         <div>Please choose a section in the dropdown.</div>
       )}
-    </div>
+    </article>
   );
 };
 
