@@ -1,4 +1,4 @@
-import AddNumbers from './AddNumbers';
+import AddNumbers from './Forms/AddNumbers';
 
 const Forms = () => {
   return (

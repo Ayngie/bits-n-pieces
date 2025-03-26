@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Buttons from '../Buttons/Buttons';
-import Forms from '../Forms/Forms';
-import Selects from '../Selects/Selects';
+import Buttons from '../../Buttons';
+import Forms from '../../Forms';
+import Selects from '../../Selects';
 
 //Define the possible component options
 type ComponentKey = 'buttons' | 'forms' | 'selects';
@@ -21,7 +21,7 @@ const ComponentMappingWithTypes = () => {
   const SelectedComponent = componentMap[selectedComponent];
 
   return (
-    <>
+    <div>
       <h2>Component Mapping with Types</h2>
 
       <label>
@@ -42,7 +42,7 @@ const ComponentMappingWithTypes = () => {
       ) : (
         <div>Please choose a section in the dropdown.</div>
       )}
-    </>
+    </div>
   );
 };
 
