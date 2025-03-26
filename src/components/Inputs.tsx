@@ -1,4 +1,5 @@
 import AddNumbers from './Inputs/AddNumbers';
+import ChangeButtonTextBasic from './Inputs/ChangeButtonTextBasic';
 import ChangeButtonTextSanitized from './Inputs/ChangeButtonTextSanitized';
 
 const Inputs = () => {
@@ -7,6 +8,7 @@ const Inputs = () => {
       <h2>Forms:</h2>
 
       <AddNumbers />
+      <ChangeButtonTextBasic />
       <ChangeButtonTextSanitized />
     </section>
   );
