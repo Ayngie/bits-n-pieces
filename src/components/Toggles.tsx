@@ -3,7 +3,6 @@ import ToggleColored from './Toggles/ToggleColored';
 import ToggleTheme from './Toggles/ToggleTheme';
 import ToggleTwoChoices from './Toggles/ToggleTwoChoices';
 import ToggleThreeChoices from './Toggles/ToggleThreeChoices';
-import ToggleWithProps from './Toggles/ToggleWithProps';
 
 const Toggles: React.FC = () => {
   return (
@@ -15,11 +14,6 @@ const Toggles: React.FC = () => {
       <ToggleTheme />
       <ToggleTwoChoices />
       <ToggleThreeChoices />
-      {/* Wrapping here for example component, to keep component file clean */}
-      <article className="bordered-section">
-        <h3>Toggle with props:</h3>
-        <ToggleWithProps buttonText="Buttontext goes here" />
-      </article>
     </section>
   );
 };

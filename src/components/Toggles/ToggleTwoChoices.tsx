@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ToggleWithProps from './ToggleWithProps';
+import ToggleWithProps from '../Buttons/ButtonWithProps';
 import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
 import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 

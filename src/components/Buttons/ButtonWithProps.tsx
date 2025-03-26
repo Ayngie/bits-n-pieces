@@ -1,9 +1,9 @@
-interface ToggleWithPropsProps {
+interface ButtonWithPropsProps {
   buttonText?: string;
   toggleFunction?: () => void; //Accept the function as a prop
 }
 
-const ToggleWithProps: React.FC<ToggleWithPropsProps> = ({
+const ButtonWithProps: React.FC<ButtonWithPropsProps> = ({
   buttonText,
   toggleFunction,
 }) => {
@@ -14,4 +14,4 @@ const ToggleWithProps: React.FC<ToggleWithPropsProps> = ({
   );
 };
 
-export default ToggleWithProps;
+export default ButtonWithProps;
