@@ -1,6 +1,6 @@
 import Buttons from './components/Buttons';
 import DynamicComponentMapping from './components/DynamicComponentMapping';
-import Forms from './components/Forms';
+import Inputs from './components/Inputs';
 import Selects from './components/Selects';
 import Toggles from './components/Toggles';
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
       <h1>Coding is fun!</h1>
       <Buttons />
       <DynamicComponentMapping />
-      <Forms />
+      <Inputs />
       <Selects />
       <Toggles />
     </>

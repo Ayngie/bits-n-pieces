@@ -1,6 +1,6 @@
-import AddNumbers from './Forms/AddNumbers';
+import AddNumbers from './Inputs/AddNumbers';
 
-const Forms = () => {
+const Inputs = () => {
   return (
     <section className="card">
       <h2>Forms:</h2>
@@ -10,4 +10,4 @@ const Forms = () => {
   );
 };
 
-export default Forms;
+export default Inputs;
