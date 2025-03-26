@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ToggleWithProps from './ToggleWithProps';
-import ComponentMappingWithTypes from '../DynamicComponentMapping/ComponentMappingWithTypes';
-import ComponentMappingWithInterfaceAndArray from '../DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
+import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
+import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 
 const ToggleTwoChoices = () => {
   const [basicChoiceOn, setBasicChoiceOn] = useState<boolean>(true);
@@ -12,8 +12,8 @@ const ToggleTwoChoices = () => {
   };
 
   return (
-    <div className="card">
-      <h2>Toggle two choices!</h2>
+    <article className="bordered-section">
+      <h3>Toggle two choices:</h3>
 
       {/* Pass toggle function to child */}
       <ToggleWithProps
@@ -22,12 +22,8 @@ const ToggleTwoChoices = () => {
       />
 
       {/* Show component based on which is toggled */}
-      {basicChoiceOn ? (
-        <ComponentMappingWithTypes />
-      ) : (
-        <ComponentMappingWithInterfaceAndArray />
-      )}
-    </div>
+      {basicChoiceOn ? <ComponentA /> : <ComponentB />}
+    </article>
   );
 };
 

@@ -1,6 +1,6 @@
 import { JSX, useState } from 'react';
-import ComponentMappingWithTypes from '../DynamicComponentMapping/ComponentMappingWithTypes';
-import ComponentMappingWithInterfaceAndArray from '../DynamicComponentMapping/ComponentMappingWithInterfaceAndArray';
+import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
+import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 
 const ToggleThreeChoices: React.FC = () => {
   const [mappingIndex, setMappingIndex] = useState<number>(0);
@@ -15,17 +15,17 @@ const ToggleThreeChoices: React.FC = () => {
     <div key="neutral">
       <p>Neutral choice</p>
     </div>,
-    <ComponentMappingWithTypes key="types" />,
-    <ComponentMappingWithInterfaceAndArray key="interface_and_array" />,
+    <ComponentA key="componentA" />,
+    <ComponentB key="componentB" />,
   ];
 
   return (
-    <div className="card">
-      <h2>Toggle three choices!</h2>
-      <button onClick={switchMapping}>Switch choice</button>
+    <article className="bordered-section">
+      <h3>Toggle three choices:</h3>
+      <button onClick={switchMapping}>Toggle choice</button>
 
       {components[mappingIndex]}
-    </div>
+    </article>
   );
 };
 
