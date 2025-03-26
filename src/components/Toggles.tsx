@@ -7,8 +7,8 @@ import ToggleWithProps from './Toggles/ToggleWithProps';
 
 const Toggles: React.FC = () => {
   return (
-    <div className="card bordered-section">
-      <h3>Toggles:</h3>
+    <section className="card">
+      <h2>Toggles:</h2>
 
       <Toggle />
       <ToggleColored />
@@ -16,7 +16,7 @@ const Toggles: React.FC = () => {
       <ToggleTwoChoices />
       <ToggleThreeChoices />
       <ToggleWithProps buttonText="Buttontext goes here" />
-    </div>
+    </section>
   );
 };
 
