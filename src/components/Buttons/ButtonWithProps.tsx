@@ -1,16 +1,16 @@
 interface ButtonWithPropsProps {
   buttonText: string;
   type?: 'button' | 'reset' | 'submit';
-  toggleFunction?: () => void; //Accept the function as a prop
+  onClickFunction?: () => void; //Accept the function as a prop
 }
 
 const ButtonWithProps: React.FC<ButtonWithPropsProps> = ({
   buttonText,
   type = 'button', //default value
-  toggleFunction,
+  onClickFunction,
 }) => {
   return (
-    <button type={type} onClick={toggleFunction}>
+    <button type={type} onClick={onClickFunction}>
       {buttonText}
     </button>
   );

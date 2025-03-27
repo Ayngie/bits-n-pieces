@@ -18,7 +18,7 @@ const ToggleTwoChoices = () => {
       {/* Pass toggle function to child */}
       <ToggleWithProps
         buttonText="Toggle two choices"
-        toggleFunction={toggleChoice}
+        onClickFunction={toggleChoice}
       />
 
       {/* Show component based on which is toggled */}
