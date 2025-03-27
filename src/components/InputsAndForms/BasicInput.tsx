@@ -2,31 +2,80 @@ import { ChangeEvent, useState } from 'react';
 import ButtonWithProps from '../Buttons/ButtonWithProps';
 
 const BasicInput = () => {
-  const [textInput, setTextInput] = useState<string>('Text...');
+  const [searchText, setSearchText] = useState<string>('Write here...');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setTextInput(e.target.value);
+    setSearchText(e.target.value);
   };
 
   return (
     <article className="bordered-section">
-      <h3>Basic input:</h3>
+      <h3>Basic inputs:</h3>
 
-      <div>
-        <div>
-          <label htmlFor="buttonTextInput">
-            Input text to change button text:
-          </label>
-        </div>
+      {/* Text input */}
+      <fieldset className="bordered-section">
+        <legend>
+          <h4>Text input:</h4>
+        </legend>
+        <label htmlFor="searchTextInput">Input text to search:</label>{' '}
         <input
-          id="buttonTextInput"
+          id="searchTextInput"
           type="text"
-          value={textInput}
+          value={searchText}
           onChange={handleChange}
         />
+        <ButtonWithProps buttonText="Search" />
+      </fieldset>
 
-        <ButtonWithProps buttonText={textInput} />
-      </div>
+      {/* Checkboxes */}
+      <fieldset className="bordered-section">
+        <legend>
+          <h4>Checkbox input:</h4>
+        </legend>
+
+        <p>Make my font...</p>
+
+        <div>
+          <label htmlFor="bold">
+            Bold:{' '}
+            <input
+              id="bold"
+              type="checkbox"
+              name="font"
+              defaultChecked={false}></input>
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="italic">
+            Italic:{' '}
+            <input
+              id="italic"
+              type="checkbox"
+              name="font"
+              defaultChecked={false}></input>
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Radiobuttons */}
+      <fieldset className="bordered-section">
+        <legend>
+          <h4>Radiobutton input:</h4>
+        </legend>
+
+        <p>Choose theme: </p>
+        <div>
+          <label htmlFor="light">
+            <input id="light" type="radio" name="theme" value="option1" /> Light
+            mode
+          </label>
+          <label htmlFor="dark">
+            <input id="dark" type="radio" name="theme" value="option2" /> Dark
+            mode
+          </label>
+        </div>
+      </fieldset>
     </article>
   );
 };
