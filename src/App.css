@@ -9,6 +9,9 @@ h2 {
 font-variant: small-caps;
 }
 
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -24,6 +27,7 @@ font-variant: small-caps;
   padding: 1em;
   margin: 0.5em;
 }
+
 .button-on {
   background-color: hotpink;
   color: rgba(255, 255, 255, 0.87);
@@ -35,7 +39,7 @@ font-variant: small-caps;
 #chosen-dark-theme {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;  
-  
+
   button {
     background-color: #646cff;
     color: rgba(255, 255, 255, 0.87);

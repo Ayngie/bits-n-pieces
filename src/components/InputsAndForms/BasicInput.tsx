@@ -3,9 +3,17 @@ import ButtonWithProps from '../Buttons/ButtonWithProps';
 
 const BasicInput = () => {
   const [searchText, setSearchText] = useState<string>('Write here...');
+  const [boldChecked, setBoldChecked] = useState<boolean>(false);
+  const [italicChecked, setItalicChecked] = useState<boolean>(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchText(e.target.value);
+  };
+
+  const fontstyles = () => {
+    return [boldChecked && 'bold', italicChecked && 'italic']
+      .filter(Boolean)
+      .join(' ');
   };
 
   return (
@@ -23,8 +31,13 @@ const BasicInput = () => {
           type="text"
           value={searchText}
           onChange={handleChange}
+          aria-label="Search text input"
+          placeholder="Write here..."
         />
-        <ButtonWithProps buttonText="Search" />
+        <ButtonWithProps
+          buttonText="Search"
+          onClickFunction={() => setSearchText(' ')}
+        />
       </fieldset>
 
       {/* Checkboxes */}
@@ -33,7 +46,7 @@ const BasicInput = () => {
           <h4>Checkbox input:</h4>
         </legend>
 
-        <p>Make my font...</p>
+        <p className={fontstyles()}>Make my font...</p>
 
         <div>
           <label htmlFor="bold">
@@ -42,7 +55,8 @@ const BasicInput = () => {
               id="bold"
               type="checkbox"
               name="font"
-              defaultChecked={false}></input>
+              checked={boldChecked}
+              onChange={() => setBoldChecked((prev) => !prev)}></input>
           </label>
         </div>
 
@@ -53,7 +67,8 @@ const BasicInput = () => {
               id="italic"
               type="checkbox"
               name="font"
-              defaultChecked={false}></input>
+              checked={italicChecked}
+              onChange={() => setItalicChecked((prev) => !prev)}></input>
           </label>
         </div>
       </fieldset>
