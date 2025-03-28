@@ -25,6 +25,7 @@ const BasicInput = () => {
         <legend>
           <h4>Text input:</h4>
         </legend>
+        {/* N.B. As we have no form-element here, button will not 'Click' on key-down = 'Enter'. */}
         <label htmlFor="searchTextInput">Input text to search:</label>{' '}
         <input
           id="searchTextInput"
