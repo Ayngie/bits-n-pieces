@@ -36,7 +36,7 @@ const BasicInput = () => {
         />
         <ButtonWithProps
           buttonText="Search"
-          onClickFunction={() => setSearchText(' ')}
+          onClickFunction={() => console.log('Search text was: ', searchText)}
         />
         <p>Searchtext: {searchText}</p>
       </fieldset>
