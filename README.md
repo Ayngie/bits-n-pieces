@@ -1,3 +1,5 @@
-# BUTTONS in React + TypeScript + Vite
-## Counter
-## Toggle button
+# BITS n' PIECES 
+React + TypeScript + Vite
+
+## Contains:
+Stuff. Buttons, counters, inputs, forms, and more stuff.
