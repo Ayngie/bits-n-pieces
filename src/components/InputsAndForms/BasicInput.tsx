@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from 'react';
 import ButtonWithProps from '../Buttons/ButtonWithProps';
 
 const BasicInput = () => {
-  const [searchText, setSearchText] = useState<string>('Write here...');
+  const [searchText, setSearchText] = useState<string>('');
   const [boldChecked, setBoldChecked] = useState<boolean>(false);
   const [italicChecked, setItalicChecked] = useState<boolean>(false);
 
@@ -38,6 +38,7 @@ const BasicInput = () => {
           buttonText="Search"
           onClickFunction={() => setSearchText(' ')}
         />
+        <p>Searchtext: {searchText}</p>
       </fieldset>
 
       {/* Checkboxes */}
