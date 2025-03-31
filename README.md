@@ -1,5 +1,7 @@
-# BITS n' PIECES 
+# Tiny Projects 
 React + TypeScript + Vite
 
 ## Contains:
-Stuff. Buttons, counters, inputs, forms, and more stuff.
+Bits n' pieces. Stuff. 
+Buttons, counters, inputs, forms...
+More stuff.
