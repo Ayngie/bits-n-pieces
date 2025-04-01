@@ -36,9 +36,9 @@ const InputRadiobutton = () => {
             Dark mode
           </label>
 
-          <label htmlFor="neutral">
+          <label htmlFor="none">
             <input
-              id="neutral"
+              id="none"
               type="radio"
               name="theme"
               value=""
