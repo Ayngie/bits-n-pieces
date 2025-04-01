@@ -6,22 +6,22 @@ import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/Componen
 const ToggleTwoChoices = () => {
   const [basicChoiceOn, setBasicChoiceOn] = useState<boolean>(true);
 
-  // Create handler function to pass as prop (to change state in this component)
+  // handler function for state change in this component - to pass as prop, so as to keep this components state logic in this file.
   const toggleChoice = () => {
     setBasicChoiceOn((prev) => !prev);
   };
 
   return (
     <article className="example-section">
-      <h3>Toggle two choices:</h3>
+      <h2>Toggle two choices:</h2>
 
-      {/* Pass toggle function to child */}
+      {/* Passing toggle function to child */}
       <ToggleWithProps
         buttonText="Toggle two choices"
         onClickFunction={toggleChoice}
       />
 
-      {/* Show component based on which is toggled */}
+      {/* Showing component based on which is toggled */}
       {basicChoiceOn ? <ComponentA /> : <ComponentB />}
     </article>
   );

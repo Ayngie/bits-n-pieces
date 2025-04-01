@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const Toggle: React.FC = () => {
-  // explicitly defines this as a functional component.
+const Toggle = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
     <article className="example-section">
-      <h3>Basic toggle:</h3>
+      <h2>Basic toggle:</h2>
 
       <button onClick={() => setOn(!on)}>{on ? 'ON' : 'OFF'}</button>
     </article>

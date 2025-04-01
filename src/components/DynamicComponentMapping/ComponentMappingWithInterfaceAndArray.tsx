@@ -1,9 +1,7 @@
 const ComponentMappingWithInterfaceAndArray = () => {
   return (
     <article className="example-section">
-      <h3>Component Mapping with Interface and Array:</h3>
-
-      {/* TODO: finish coding this */}
+      <h2>Component Mapping with Interface and Array:</h2>
       <p>Coming soon...</p>
     </article>
   );

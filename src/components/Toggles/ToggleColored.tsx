@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const ToggleColored: React.FC = () => {
+const ToggleColored = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
     <article className="example-section">
-      <h3>Toggle with interactive coloring:</h3>
+      <h2>Toggle with interactive coloring:</h2>
 
       <button
         className={on ? 'button-on' : 'button-off'}

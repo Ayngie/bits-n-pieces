@@ -12,7 +12,7 @@ const InputText = () => {
     <section className="example-section">
       <fieldset>
         <legend>
-          <h4>Text input:</h4>
+          <h2>Text input:</h2>
         </legend>
         {/* N.B. As we have no form-element here, button will not 'Click' on key-down = 'Enter'. */}
         <label htmlFor="searchTextInput">Input text to search:</label>{' '}

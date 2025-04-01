@@ -2,7 +2,7 @@ import { JSX, useState } from 'react';
 import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
 import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 
-const ToggleThreeChoices: React.FC = () => {
+const ToggleThreeChoices = () => {
   const [mappingIndex, setMappingIndex] = useState<number>(0);
 
   // Function to cycle through states (0->1->2->0)
@@ -21,7 +21,7 @@ const ToggleThreeChoices: React.FC = () => {
 
   return (
     <article className="example-section">
-      <h3>Toggle three choices:</h3>
+      <h2>Toggle three choices:</h2>
       <button onClick={switchMapping}>Toggle choice</button>
 
       {components[mappingIndex]}

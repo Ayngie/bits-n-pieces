@@ -3,7 +3,7 @@ const InputRadiobutton = () => {
     <section className="example-section">
       <fieldset>
         <legend>
-          <h4>Radiobutton input:</h4>
+          <h2>Radiobutton input:</h2>
         </legend>
 
         <p>Choose theme: </p>

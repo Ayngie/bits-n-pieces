@@ -4,9 +4,7 @@ const FormAddNumbers = () => {
 
   return (
     <section className="example-section">
-      <h3>Add Numbers:</h3>
-
-      {/* TODO: finish coding this */}
+      <h2>Add Numbers:</h2>
       <p>Coming soon...</p>
     </section>
   );

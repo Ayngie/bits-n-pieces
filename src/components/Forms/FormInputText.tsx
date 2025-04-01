@@ -27,7 +27,7 @@ const FormInputText = () => {
 
   return (
     <section className="example-section">
-      <h3>Form input:</h3>
+      <h2>Form input:</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="buttonTextInput">

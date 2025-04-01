@@ -22,7 +22,7 @@ const ComponentMappingWithTypes = () => {
 
   return (
     <article className="example-section">
-      <h3>Component Mapping with Types:</h3>
+      <h2>Component Mapping with Types:</h2>
 
       <label>
         Choose a subject:{' '}

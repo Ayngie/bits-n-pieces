@@ -14,7 +14,7 @@ const InputCheckbox = () => {
     <section className="example-section">
       <fieldset>
         <legend>
-          <h4>Checkbox input:</h4>
+          <h2>Checkbox input:</h2>
         </legend>
 
         <p className={fontstyles()}>Make my font...</p>
