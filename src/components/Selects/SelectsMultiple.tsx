@@ -3,7 +3,9 @@ import { useId } from 'react';
 const SelectsMultiple = () => {
   const colorSelectId = useId();
   return (
-    <>
+    <article className="bordered-section">
+      <h2>Multiple selects:</h2>
+
       <label>
         Pick a shape:{' '}
         <select name="selectedShape">
@@ -19,7 +21,7 @@ const SelectsMultiple = () => {
         <option value="orange">Orange</option>
         <option value="blue">Blue</option>
       </select>
-    </>
+    </article>
   );
 };
 

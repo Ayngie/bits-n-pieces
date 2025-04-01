@@ -6,14 +6,8 @@ const Inputs = () => {
   return (
     <section className="component-container">
       <h1>Inputs:</h1>
-
-      {/* Text input */}
       <InputText />
-
-      {/* Checkboxes */}
       <InputCheckbox />
-
-      {/* Radiobuttons */}
       <InputRadiobutton />
     </section>
   );

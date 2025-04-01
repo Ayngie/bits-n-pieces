@@ -6,8 +6,8 @@ import ToggleThreeChoices from './Toggles/ToggleThreeChoices';
 
 const Toggles: React.FC = () => {
   return (
-    <section className="card">
-      <h2>Toggles:</h2>
+    <section className="component-container">
+      <h1>Toggles:</h1>
 
       <Toggle />
       <ToggleColored />

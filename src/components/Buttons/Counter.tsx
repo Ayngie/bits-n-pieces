@@ -6,7 +6,7 @@ const Counter: React.FC = () => {
 
   return (
     <article className="bordered-section">
-      <h3>Counter:</h3>
+      <h2>Counter:</h2>
       <p>Count is: {count}</p>
 
       {/* Increment count: */}

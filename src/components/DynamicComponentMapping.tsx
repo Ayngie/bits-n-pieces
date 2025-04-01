@@ -3,9 +3,8 @@ import ComponentMappingWithTypes from './DynamicComponentMapping/ComponentMappin
 
 const DynamicComponentMapping = () => {
   return (
-    <section className="card">
-      <h2>Dynamic Component Mapping:</h2>
-
+    <section className="component-container">
+      <h1>Dynamic Component Mapping:</h1>
       <ComponentMappingWithTypes />
       <ComponentMappingWithInterfaceAndArray />
     </section>
