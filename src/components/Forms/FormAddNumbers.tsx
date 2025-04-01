@@ -3,10 +3,10 @@ const FormAddNumbers = () => {
   //TODO: import and use getSum funciton
 
   return (
-    <section className="example-section">
+    <article className="example-container">
       <h2>Add Numbers:</h2>
       <p>Coming soon...</p>
-    </section>
+    </article>
   );
 };
 

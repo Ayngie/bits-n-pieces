@@ -1,6 +1,6 @@
 const Select = () => {
   return (
-    <article className="example-section">
+    <article className="example-container">
       <h2>Single select:</h2>
 
       <label>

@@ -5,7 +5,7 @@ const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
   return (
-    <article className="example-section">
+    <article className="example-container">
       <h2>Counter:</h2>
       <p>Count is: {count}</p>
 

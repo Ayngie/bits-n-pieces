@@ -4,7 +4,7 @@ const ToggleColored = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
-    <article className="example-section">
+    <article className="example-container">
       <h2>Toggle with interactive coloring:</h2>
 
       <button

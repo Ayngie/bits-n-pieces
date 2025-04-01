@@ -9,7 +9,7 @@ const Buttons = () => {
       <Counter />
 
       {/* Wrapping second component 'ButtonWithProps' - for this example component only (to keep component file clean) */}
-      <article className="example-section">
+      <article className="example-container">
         <h2>Button with props:</h2>
         <ButtonWithProps buttonText="Buttontext goes here" />
       </article>

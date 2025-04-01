@@ -1,9 +1,9 @@
 const ComponentC = () => {
   return (
-    <article className="example-section">
+    <section className="example-container">
       <h4>Component C</h4>
       <p>With content...</p>{' '}
-    </article>
+    </section>
   );
 };
 

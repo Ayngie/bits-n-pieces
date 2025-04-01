@@ -5,7 +5,6 @@ const Selects = () => {
   return (
     <section className="component-container">
       <h1>Selects:</h1>
-
       <Select />
       <SelectsMultiple />
     </section>

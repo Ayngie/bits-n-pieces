@@ -4,7 +4,8 @@ const ToggleTheme = () => {
   const [dark, setDark] = useState<boolean>(true);
 
   return (
-    <article className={`example-section ${dark ? 'dark-mode' : 'light-mode'}`}>
+    <article
+      className={`example-container ${dark ? 'dark-mode' : 'light-mode'}`}>
       <h2>Toggle theme between light/dark:</h2>
       <button onClick={() => setDark((prev) => !prev)}>
         {dark ? 'Dark theme' : 'Light theme'}

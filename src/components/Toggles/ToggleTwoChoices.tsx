@@ -12,7 +12,7 @@ const ToggleTwoChoices = () => {
   };
 
   return (
-    <article className="example-section">
+    <article className="example-container">
       <h2>Toggle two choices:</h2>
 
       {/* Passing toggle function to child */}

@@ -1,6 +1,6 @@
 const InputRadiobutton = () => {
   return (
-    <section className="example-section">
+    <article className="example-container">
       <fieldset>
         <legend>
           <h2>Radiobutton input:</h2>
@@ -18,7 +18,7 @@ const InputRadiobutton = () => {
           </label>
         </div>
       </fieldset>
-    </section>
+    </article>
   );
 };
 

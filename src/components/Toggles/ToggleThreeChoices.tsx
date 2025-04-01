@@ -21,7 +21,7 @@ const ToggleThreeChoices = () => {
   ];
 
   return (
-    <article className="example-section">
+    <article className="example-container">
       <h2>Toggle three choices:</h2>
 
       <ButtonWithProps

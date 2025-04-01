@@ -11,7 +11,7 @@ const InputCheckbox = () => {
   };
 
   return (
-    <section className="example-section">
+    <article className="example-container">
       <fieldset>
         <legend>
           <h2>Checkbox input:</h2>
@@ -43,7 +43,7 @@ const InputCheckbox = () => {
           </label>
         </div>
       </fieldset>
-    </section>
+    </article>
   );
 };
 

@@ -26,7 +26,7 @@ const FormInputText = () => {
   };
 
   return (
-    <section className="example-section">
+    <article className="example-container">
       <h2>Form input:</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -47,7 +47,7 @@ const FormInputText = () => {
         {/* Debugging: Show what the button text is */}
         <p>Form says: "{formInput}"</p>
       </form>
-    </section>
+    </article>
   );
 };
 

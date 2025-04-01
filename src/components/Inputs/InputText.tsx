@@ -9,7 +9,7 @@ const InputText = () => {
   };
 
   return (
-    <section className="example-section">
+    <article className="example-container">
       <fieldset>
         <legend>
           <h2>Text input:</h2>
@@ -30,7 +30,7 @@ const InputText = () => {
         />
         <p>Searchtext: {searchText}</p>
       </fieldset>
-    </section>
+    </article>
   );
 };
 
