@@ -1,4 +1,4 @@
-# Tiny Projects 
+# Bits n' pieces 
 React + TypeScript + Vite
 
 ## Contains:
