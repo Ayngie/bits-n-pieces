@@ -20,7 +20,7 @@ const ToggleThreeChoices: React.FC = () => {
   ];
 
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h3>Toggle three choices:</h3>
       <button onClick={switchMapping}>Toggle choice</button>
 

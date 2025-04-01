@@ -3,7 +3,7 @@ const FormAddNumbers = () => {
   //TODO: import and use getSum funciton
 
   return (
-    <section className="bordered-section">
+    <section className="example-section">
       <h3>Add Numbers:</h3>
 
       {/* TODO: finish coding this */}

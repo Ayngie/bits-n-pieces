@@ -5,28 +5,26 @@
   text-align: center;
 }
 
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 244, 230);
+  padding: 0.7em;
+  border: 1em solid rgb(255, 224, 229);
+  margin: 0.5em 0.5em 3em 0.5em;
+}
+.example-section {
+  border: 1px dotted rgb(248, 151, 255); 
+  padding: 1em;
+  margin: 0em 0.5em 1.5em 0.5em;
+}
+
 h2 {
 font-variant: small-caps;
 }
-
 .bold {font-weight: bold;}
 .italic {font-style: italic;}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
-  margin: 0.5em;
-  align-items: center;
-  border: 1px dotted blue; 
-
-}
-
-.bordered-section {
-  border: 1px dotted grey; 
-  padding: 1em;
-  margin: 0.5em;
-}
 
 .button-on {
   background-color: hotpink;
@@ -43,7 +41,6 @@ font-variant: small-caps;
   button {
     background-color: #646cff;
     color: rgba(255, 255, 255, 0.87);
-    /* border: 1px solid white;  */
   }
   button:hover {
     border-color: white;

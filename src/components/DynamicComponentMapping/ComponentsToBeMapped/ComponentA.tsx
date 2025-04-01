@@ -1,6 +1,6 @@
 const ComponentA = () => {
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h4>Component A</h4>
       <p>With content...</p>{' '}
     </article>

@@ -21,7 +21,7 @@ const ComponentMappingWithTypes = () => {
   const SelectedComponent = componentMap[selectedComponent];
 
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h3>Component Mapping with Types:</h3>
 
       <label>

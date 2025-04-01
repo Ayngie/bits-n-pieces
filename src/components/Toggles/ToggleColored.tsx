@@ -4,7 +4,7 @@ const ToggleColored: React.FC = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h3>Toggle with interactive coloring:</h3>
 
       <button

@@ -3,7 +3,7 @@ import { useId } from 'react';
 const SelectsMultiple = () => {
   const colorSelectId = useId();
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h2>Multiple selects:</h2>
 
       <label>

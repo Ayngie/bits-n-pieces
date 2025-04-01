@@ -1,6 +1,6 @@
 const InputRadiobutton = () => {
   return (
-    <section className="bordered-section">
+    <section className="example-section">
       <fieldset>
         <legend>
           <h4>Radiobutton input:</h4>

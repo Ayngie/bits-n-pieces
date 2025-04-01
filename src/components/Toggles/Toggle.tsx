@@ -5,7 +5,7 @@ const Toggle: React.FC = () => {
   const [on, setOn] = useState<boolean>(true);
 
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h3>Basic toggle:</h3>
 
       <button onClick={() => setOn(!on)}>{on ? 'ON' : 'OFF'}</button>

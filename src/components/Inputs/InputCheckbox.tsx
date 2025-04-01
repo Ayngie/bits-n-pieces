@@ -11,7 +11,7 @@ const InputCheckbox = () => {
   };
 
   return (
-    <section className="bordered-section">
+    <section className="example-section">
       <fieldset>
         <legend>
           <h4>Checkbox input:</h4>

@@ -1,6 +1,6 @@
 const ComponentMappingWithInterfaceAndArray = () => {
   return (
-    <article className="bordered-section">
+    <article className="example-section">
       <h3>Component Mapping with Interface and Array:</h3>
 
       {/* TODO: finish coding this */}

@@ -5,7 +5,7 @@ const ToggleTheme: React.FC = () => {
 
   return (
     <article
-      className="bordered-section"
+      className="example-section"
       id={dark ? 'chosen-dark-theme' : 'chosen-light-theme'}>
       <h3>Toggle theme between light/dark:</h3>
       <button onClick={() => setDark((prev) => !prev)}>

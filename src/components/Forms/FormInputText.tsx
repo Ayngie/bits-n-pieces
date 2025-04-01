@@ -26,7 +26,7 @@ const FormInputText = () => {
   };
 
   return (
-    <section className="bordered-section">
+    <section className="example-section">
       <h3>Form input:</h3>
       <form onSubmit={handleSubmit}>
         <div>

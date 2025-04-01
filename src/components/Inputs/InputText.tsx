@@ -9,7 +9,7 @@ const InputText = () => {
   };
 
   return (
-    <section className="bordered-section">
+    <section className="example-section">
       <fieldset>
         <legend>
           <h4>Text input:</h4>
