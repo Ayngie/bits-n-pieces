@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ToggleWithProps from '../Buttons/ButtonWithProps';
+import ButtonWithProps from '../Buttons/ButtonWithProps';
 import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
 import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 
@@ -16,7 +16,7 @@ const ToggleTwoChoices = () => {
       <h2>Toggle two choices:</h2>
 
       {/* Passing toggle function to child */}
-      <ToggleWithProps
+      <ButtonWithProps
         buttonText="Toggle two choices"
         onClickFunction={toggleChoice}
       />

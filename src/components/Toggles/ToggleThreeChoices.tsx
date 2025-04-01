@@ -1,5 +1,5 @@
 import { JSX, useState } from 'react';
-import ToggleWithProps from '../Buttons/ButtonWithProps';
+import ButtonWithProps from '../Buttons/ButtonWithProps';
 import ComponentA from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentA';
 import ComponentB from '../DynamicComponentMapping/ComponentsToBeMapped/ComponentB';
 
@@ -24,7 +24,7 @@ const ToggleThreeChoices = () => {
     <article className="example-section">
       <h2>Toggle three choices:</h2>
 
-      <ToggleWithProps
+      <ButtonWithProps
         buttonText="Toggle three choices"
         onClickFunction={switchMapping}
       />
