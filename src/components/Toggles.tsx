@@ -12,8 +12,10 @@ const Toggles: React.FC = () => {
       <Toggle />
       <ToggleColored />
       <ToggleTheme />
-      <ToggleTwoChoices />
-      <ToggleThreeChoices />
+      <div className="side-by-side">
+        <ToggleTwoChoices />
+        <ToggleThreeChoices />
+      </div>
     </section>
   );
 };

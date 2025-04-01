@@ -20,6 +20,11 @@
   margin: 0em 0.5em 1.5em 0.5em;
 }
 
+.side-by-side {
+  display: flex;
+flex-direction: row;
+}
+
 h2 {
 font-variant: small-caps;
 }
