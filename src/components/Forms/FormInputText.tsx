@@ -8,7 +8,7 @@ const sanitizeInput = (input: string): string => {
   // .trim() // Remove leading/trailing spaces
 };
 
-const FormInput = () => {
+const FormInputText = () => {
   const [inputValue, setInputValue] = useState<string>(' ');
   const [formInput, setFormInput] = useState<string>("You're amazing");
 
@@ -26,7 +26,7 @@ const FormInput = () => {
   };
 
   return (
-    <article className="bordered-section">
+    <section className="bordered-section">
       <h3>Form input:</h3>
       <form onSubmit={handleSubmit}>
         <div>
@@ -47,8 +47,8 @@ const FormInput = () => {
         {/* Debugging: Show what the button text is */}
         <p>Form says: "{formInput}"</p>
       </form>
-    </article>
+    </section>
   );
 };
 
-export default FormInput;
+export default FormInputText;
