@@ -31,6 +31,13 @@ font-variant: small-caps;
 .bold {font-weight: bold;}
 .italic {font-style: italic;}
 
+legend {
+padding: 0.5em 1em;
+}
+input {
+  margin: 0.4rem;
+}
+
 .button-on {
   background-color: hotpink;
   color: rgba(255, 255, 255, 0.87);
