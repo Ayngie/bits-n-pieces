@@ -1,11 +1,11 @@
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import ButtonWithProps from '../Buttons/ButtonWithProps';
 
 const InputText = () => {
   const [searchInput, setSearchInput] = useState<string>('');
   const [searchText, setSearchText] = useState<string>('');
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value);
   };
 
