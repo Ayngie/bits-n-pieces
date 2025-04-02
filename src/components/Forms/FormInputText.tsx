@@ -33,12 +33,12 @@ const FormInputText = () => {
             <h2>Form input:</h2>
           </legend>
           <div>
-            <label htmlFor="buttonTextInput">
+            <label htmlFor="userInput">
               Input text in this form to change the text below:{' '}
             </label>
           </div>
           <input
-            id="buttonTextInput"
+            id="userInput"
             type="text"
             value={userInput}
             onChange={handleChange}

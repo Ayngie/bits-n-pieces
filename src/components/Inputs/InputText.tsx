@@ -23,9 +23,9 @@ const InputText = () => {
           <h2>Text input:</h2>
         </legend>
         {/* N.B. As we have no form-element here, button will not 'Click' on key-down = 'Enter'. */}
-        <label htmlFor="searchTextInput">Input text to search:</label>{' '}
+        <label htmlFor="userInput">Input text to search:</label>{' '}
         <input
-          id="searchTextInput"
+          id="userInput"
           type="text"
           value={userInput}
           onChange={handleChange}
