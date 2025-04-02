@@ -2,17 +2,17 @@ import { useState } from 'react';
 import ButtonWithProps from '../Buttons/ButtonWithProps';
 
 const InputText = () => {
-  const [searchInput, setSearchInput] = useState<string>('');
+  const [userInput, setUserInput] = useState<string>('');
   const [searchText, setSearchText] = useState<string>('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchInput(e.target.value);
+    setUserInput(e.target.value);
   };
 
   const searchForResults = () => {
-    console.log('Search text was: ', searchInput);
-    setSearchText(searchInput);
-    setSearchInput('');
+    console.log('Search text was: ', userInput);
+    setSearchText(userInput);
+    setUserInput('');
     console.log('Searching for: ', searchText);
   };
 
@@ -27,7 +27,7 @@ const InputText = () => {
         <input
           id="searchTextInput"
           type="text"
-          value={searchInput}
+          value={userInput}
           onChange={handleChange}
           aria-label="Search text input"
           placeholder="Write here..."
