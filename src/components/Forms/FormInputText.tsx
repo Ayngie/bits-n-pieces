@@ -5,12 +5,11 @@ const sanitizeInput = (input: string): string => {
   return input
     .replace(/<[^>]*>/g, '') // Remove HTML-tags
     .replace(/\s+/g, ' '); // Prevent multiple spaces, replace with single space
-  // .trim() // Remove leading/trailing spaces
 };
 
 const FormInputText = () => {
-  const [userInput, setUserInput] = useState<string>(' ');
-  const [formInput, setFormInput] = useState<string>("You're amazing");
+  const [userInput, setUserInput] = useState<string>('');
+  const [formInput, setFormInput] = useState<string>('');
 
   //sanitize input
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -23,6 +22,7 @@ const FormInputText = () => {
   // prevent default form submission / page reload
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setUserInput('');
   };
 
   return (
