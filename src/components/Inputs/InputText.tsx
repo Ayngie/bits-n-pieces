@@ -9,7 +9,7 @@ const InputText = () => {
     setUserInput(e.target.value);
   };
 
-  const searchForResults = () => {
+  const handleSearch = () => {
     console.log('Search text was: ', userInput);
     setSearchText(userInput);
     setUserInput('');
@@ -32,10 +32,7 @@ const InputText = () => {
           aria-label="Search text input"
           placeholder="Write here..."
         />
-        <ButtonWithProps
-          buttonText="Search"
-          onClickFunction={searchForResults}
-        />
+        <ButtonWithProps buttonText="Search" onClickFunction={handleSearch} />
         <p>Search text was: {searchText}</p>
       </fieldset>
     </article>
