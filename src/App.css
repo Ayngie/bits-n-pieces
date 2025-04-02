@@ -22,11 +22,18 @@
 
 .side-by-side {
   display: flex;
-flex-direction: row;
+  flex-direction: row;
+}
+
+.input-text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.8em;
 }
 
 h2 {
-font-variant: small-caps;
+  font-variant: small-caps;
 }
 .bold {font-weight: bold;}
 .italic {font-style: italic;}
@@ -42,7 +49,13 @@ input {
   background-color: hotpink;
   color: rgba(255, 255, 255, 0.87);
 }
+.button-on:active {
+  background-color: hotpink;
+}
 .button-off {
+  background-color: turquoise;
+}
+.button-off:active {
   background-color: turquoise;
 }
 
