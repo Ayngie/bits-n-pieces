@@ -5,15 +5,20 @@ const InputText = () => {
   const [userInput, setUserInput] = useState<string>('');
   const [searchText, setSearchText] = useState<string>('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const sanitizeInput = (input: string): string =>
+    input
+      .replace(/<[^>]*>/g, '') // Remove HTML-tags
+      .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+      .trim();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setUserInput(e.target.value);
   };
 
   const handleSearch = () => {
-    console.log('Search text was: ', userInput);
-    setSearchText(userInput);
+    const sanitized = sanitizeInput(userInput);
+    setSearchText(sanitized);
     setUserInput('');
-    console.log('Searching for: ', searchText);
   };
 
   return (
@@ -33,7 +38,10 @@ const InputText = () => {
           placeholder="Write here..."
         />
         <ButtonWithProps buttonText="Search" onClickFunction={handleSearch} />
-        <p className="input-text-info italic">Search text was: {searchText}</p>
+        <div className="input-text-info italic">
+          <p>User is writing: {userInput}</p>
+          <p>Searchtext was: {searchText}</p>
+        </div>
       </fieldset>
     </article>
   );
