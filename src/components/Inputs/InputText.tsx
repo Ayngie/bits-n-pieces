@@ -33,7 +33,7 @@ const InputText = () => {
           placeholder="Write here..."
         />
         <ButtonWithProps buttonText="Search" onClickFunction={handleSearch} />
-        <p>Search text was: {searchText}</p>
+        <p className="input-text-info italic">Search text was: {searchText}</p>
       </fieldset>
     </article>
   );
