@@ -36,7 +36,7 @@ const InputText = () => {
           buttonText="Search"
           onClickFunction={searchForResults}
         />
-        <p>Searchtext: {searchText}</p>
+        <p>Search text was: {searchText}</p>
       </fieldset>
     </article>
   );
