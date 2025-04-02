@@ -9,14 +9,14 @@ const sanitizeInput = (input: string): string => {
 };
 
 const FormInputText = () => {
-  const [inputValue, setInputValue] = useState<string>(' ');
+  const [userInput, setUserInput] = useState<string>(' ');
   const [formInput, setFormInput] = useState<string>("You're amazing");
 
   //sanitize input
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const rawValue = e.target.value;
     const sanitizedValue = sanitizeInput(rawValue);
-    setInputValue(sanitizedValue);
+    setUserInput(sanitizedValue);
     setFormInput(sanitizedValue || "You're amazing");
   };
 
@@ -40,8 +40,8 @@ const FormInputText = () => {
           <input
             id="buttonTextInput"
             type="text"
-            value={inputValue}
-            onChange={handleInputChange}
+            value={userInput}
+            onChange={handleChange}
             placeholder="Type here..."
             maxLength={50}
           />
