@@ -27,25 +27,28 @@ const FormInputText = () => {
 
   return (
     <article className="example-container">
-      <h2>Form input:</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="buttonTextInput">
-            Input text in this form to change the text below:{' '}
-          </label>
-        </div>
-        <input
-          id="buttonTextInput"
-          type="text"
-          value={inputValue}
-          onChange={handleInputChange}
-          placeholder="Type here..."
-          maxLength={50}
-        />
+        <fieldset>
+          <legend>
+            <h2>Form input:</h2>
+          </legend>
+          <div>
+            <label htmlFor="buttonTextInput">
+              Input text in this form to change the text below:{' '}
+            </label>
+          </div>
+          <input
+            id="buttonTextInput"
+            type="text"
+            value={inputValue}
+            onChange={handleInputChange}
+            placeholder="Type here..."
+            maxLength={50}
+          />
+          <ButtonWithProps type="submit" buttonText="Update Form" />
 
-        <ButtonWithProps type="submit" buttonText="Update Form" />
-        {/* Debugging: Show what the button text is */}
-        <p>Form says: "{formInput}"</p>
+          <p>Form says: "{formInput}"</p>
+        </fieldset>
       </form>
     </article>
   );
