@@ -19,13 +19,13 @@ To run this project locally:
 Clone the repository
 
 ```terminal
-  git clone https://github.com/Ayngie/natural-guide-to-gestational-diabetes.git
+  git clone https://github.com/Ayngie/bits-n-pieces.git
 ```
 
 Navigate to the project directory
 
 ```terminal
-  cd natural-guide-to-gestational-diabetes
+  cd bits-n-pieces
 ```
 
 Install dependencies
