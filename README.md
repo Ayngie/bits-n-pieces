@@ -1,17 +1,12 @@
 # Bits n' pieces 
 React + TypeScript + Vite
 
+
 ## Overview:
 Bits n' pieces. Stuff. 
 Buttons, counters, inputs, forms...
 More stuff.
 
----
-
-## Screenshot of project:
-![Project Screenshot](./public/screenshot-of-project.png?raw=true "Bits n' Pieces")
-
----
 
 ## Installation
 To run this project locally:
