@@ -12,7 +12,7 @@ const Toggles: React.FC = () => {
       <Toggle />
       <ToggleColored />
       <ToggleTheme />
-      <div className="side-by-side">
+      <div className="flex-row">
         <ToggleTwoChoices />
         <ToggleThreeChoices />
       </div>
