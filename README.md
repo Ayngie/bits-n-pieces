@@ -7,6 +7,9 @@ Bits n' pieces. Stuff.
 Buttons, counters, inputs, forms...
 Just playing around with some components and tags... :)
 
+## Deployed with GitHub Actions
+Visit the deployed app [here](https://ayngie.github.io/bits-n-pieces/) :)
+
 
 ## Installation
 To run this project locally:
