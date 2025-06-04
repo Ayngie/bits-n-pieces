@@ -5,7 +5,7 @@ React + TypeScript + Vite
 ## Overview:
 Bits n' pieces. Stuff. 
 Buttons, counters, inputs, forms...
-More stuff.
+Just playing around with some components and tags... :)
 
 
 ## Installation
