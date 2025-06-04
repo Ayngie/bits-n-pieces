@@ -7,6 +7,10 @@ Bits n' pieces. Stuff.
 Buttons, counters, inputs, forms...
 Just playing around with some components and tags... :)
 
+
+N.B. This app has NO focus on styling!! 
+Some basic styling is included purely for the purpose of marking different components.
+
 ## Deployed with GitHub Actions
 Visit the deployed app [here](https://ayngie.github.io/bits-n-pieces/) :)
 
